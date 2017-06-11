@@ -40,6 +40,9 @@ span {
 .clear {
   clear: both; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 /* Header
 ======================*/
 .header-top {
@@ -101,7 +104,8 @@ span {
     left: 0;
     right: 0;
     padding-bottom: 15px;
-    border-bottom: 1px solid black; }
+    border-bottom: 1px solid black;
+    z-index: 9999; }
     @media only screen and (min-width: 768px) {
       .main-menu__item ul {
         background: none;
@@ -120,7 +124,6 @@ span {
       .main-menu__item ul li a {
         color: #fff;
         text-transform: uppercase;
-        font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         font-size: 12px;
         color: #ccc;
@@ -139,5 +142,261 @@ span {
               color: #fff; } }
   .main-menu__item_left {
     padding-bottom: 15px; }
+
+/* Header-bottom
+========================*/
+.header-bottom {
+  background: url(../img/bg.jpg) no-repeat top center;
+  width: 100%;
+  background-size: cover;
+  padding-top: 70px;
+  padding-bottom: 10px; }
+  .header-bottom .content-header {
+    width: 100%;
+    padding: 0 15px; }
+    @media only screen and (min-width: 992px) {
+      .header-bottom .content-header {
+        z-index: 9999;
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%); } }
+    @media only screen and (min-width: 1240px) {
+      .header-bottom .content-header {
+        width: 1777px;
+        margin: 0 auto;
+        top: 25%; } }
+  .header-bottom .fullscreen-bg {
+    position: relative; }
+    .header-bottom .fullscreen-bg #video-bg-elem {
+      display: none; }
+      @media only screen and (min-width: 992px) {
+        .header-bottom .fullscreen-bg #video-bg-elem {
+          display: block; } }
+    @media only screen and (min-width: 992px) {
+      .header-bottom .fullscreen-bg {
+        overflow: hidden;
+        position: relative;
+        z-index: 100;
+        position: relative;
+        padding-top: 0%; } }
+  .header-bottom #video-bg-elem {
+    width: 100%; }
+  @media only screen and (min-width: 992px) {
+    .header-bottom {
+      background: none;
+      padding: 0; } }
+  .header-bottom__box {
+    text-align: center;
+    color: #fff; }
+    .header-bottom__box h2 {
+      font-size: 21px;
+      font-weight: 500;
+      padding-bottom: 40px; }
+      @media only screen and (min-width: 768px) {
+        .header-bottom__box h2 {
+          font-size: 34px; } }
+    .header-bottom__box span {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 768px) {
+        .header-bottom__box span {
+          font-size: 29px; } }
+    .header-bottom__box_item {
+      padding: 20px 0px;
+      max-width: 432px;
+      margin: 82px auto;
+      border-top: 2px solid #00CEFF;
+      border-bottom: 2px solid #00CEFF; }
+      .header-bottom__box_item span {
+        font-size: 15px;
+        font-weight: 600; }
+        @media only screen and (min-width: 768px) {
+          .header-bottom__box_item span {
+            font-size: 22px; } }
+
+/* Price
+======================*/
+.price {
+  background: #000000;
+  padding: 70px 0px; }
+  @media only screen and (min-width: 1200px) {
+    .price {
+      padding-top: 127px;
+      padding-bottom: 189px; } }
+  .price .price-box__wrap {
+    padding-top: 84px;
+    position: relative; }
+    .price .price-box__wrap .car {
+      display: none; }
+      @media only screen and (min-width: 1200px) {
+        .price .price-box__wrap .car {
+          display: block;
+          position: absolute;
+          bottom: 148px;
+          left: 163px;
+          width: 71%; } }
+  .price__box {
+    position: relative;
+    width: 100%;
+    margin: 0 auto; }
+    @media only screen and (min-width: 480px) {
+      .price__box {
+        width: 380px; } }
+    @media only screen and (min-width: 768px) {
+      .price__box {
+        width: 310px; } }
+    @media only screen and (min-width: 1200px) {
+      .price__box {
+        width: 380px; } }
+    .price__box_1 img {
+      margin-top: -73px; }
+      @media only screen and (min-width: 1200px) {
+        .price__box_1 img {
+          margin-top: -113px; } }
+    @media only screen and (min-width: 992px) {
+      .price__box_1 {
+        float: left; } }
+    @media only screen and (min-width: 1200px) {
+      .price__box_1 {
+        padding-top: 104px; } }
+    .price__box_2 {
+      margin-top: -118px; }
+      .price__box_2 img {
+        margin-bottom: -74px; }
+        @media only screen and (min-width: 1200px) {
+          .price__box_2 img {
+            margin-bottom: -36px; } }
+      @media only screen and (min-width: 992px) {
+        .price__box_2 {
+          float: left; } }
+      @media only screen and (min-width: 1200px) {
+        .price__box_2 {
+          padding-top: 300px; } }
+    .price__box_3 {
+      margin-top: 40px; }
+      .price__box_3 img {
+        margin-top: -50px; }
+        @media only screen and (min-width: 1200px) {
+          .price__box_3 img {
+            margin-top: -73px; } }
+      @media only screen and (min-width: 992px) {
+        .price__box_3 {
+          float: right; } }
+    .price__box_txt p {
+      color: #fff;
+      font-size: 14px; }
+      .price__box_txt p b {
+        font-weight: 600; }
+  .price__title {
+    text-align: center; }
+    .price__title span {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      padding-bottom: 10px; }
+      .price__title span:after {
+        position: absolute;
+        content: "";
+        width: 80%;
+        height: 2px;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%);
+        background: #00AAF8; }
+    .price__title h2 {
+      margin-top: 128px;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: white;
+      position: relative; }
+      @media only screen and (min-width: 768px) {
+        .price__title h2 {
+          font-size: 23px; } }
+      @media only screen and (min-width: 768px) {
+        .price__title h2 {
+          font-size: 39px; } }
+      .price__title h2:before {
+        position: absolute;
+        content: "";
+        width: 43px;
+        height: 139px;
+        left: 0;
+        top: -34px;
+        background: url(../img/left.png) no-repeat; }
+      .price__title h2:after {
+        position: absolute;
+        content: "";
+        width: 45px;
+        height: 139px;
+        top: -34px;
+        right: 0;
+        background: url(../img/right.png) no-repeat; }
+
+/* Footer
+=========================*/
+.footer {
+  background: url(../img/bg2.jpg) no-repeat top center;
+  width: 100%;
+  background-size: cover; }
+  .footer__box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    position: relative; }
+    @media only screen and (min-width: 992px) {
+      .footer__box {
+        padding: 62px;
+        background: rgba(255, 255, 255, 0.1) url(../img/ll.png) no-repeat top 60px center;
+        padding-bottom: 24px; } }
+    .footer__box h2 {
+      text-align: center;
+      font-weight: 800;
+      color: #fff;
+      font-size: 40px;
+      padding-bottom: 48px; }
+    @media only screen and (min-width: 992px) {
+      .footer__box ul {
+        padding-left: 53px; } }
+    .footer__box ul li {
+      background: url(../img/ch.png) no-repeat left top 6px;
+      padding-left: 28px;
+      margin-bottom: 42px; }
+      .footer__box ul li span {
+        color: #fff;
+        font-size: 14px;
+        line-height: 26px; }
+
+.button-wrap {
+  text-align: center;
+  background: #000000;
+  padding-top: 48px;
+  padding-bottom: 85px; }
+  .button-wrap a {
+    width: 288px;
+    display: inline-block;
+    height: 50px;
+    border: 1px solid white;
+    color: #fff;
+    font-weight: 800;
+    line-height: 44px;
+    padding-right: 16px;
+    background: url(../img/str.png) no-repeat right 5px top 11px;
+    transition: 0.5s; }
+    .button-wrap a:hover {
+      color: #DBDBDB;
+      border: 1px solid #DBDBDB; }
+    @media only screen and (min-width: 992px) {
+      .button-wrap a {
+        background: url(../img/str.png) no-repeat right 23px top 25px;
+        height: 81px;
+        width: 496px;
+        text-transform: uppercase;
+        font-size: 25px;
+        line-height: 75px; } }
 
 /*# sourceMappingURL=style.css.map */
